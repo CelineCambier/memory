@@ -5,7 +5,6 @@ import './App.css'
 
 import Card from './Card'
 import GuessCount from './GuessCount'
-import HallOfFame, { FAKE_HOF } from './HallOfFame'
 import Header from './Header'
 
 const SIDE = 6
@@ -91,7 +90,6 @@ class App extends Component {
           />
         ))}
         <GuessCount guesses={guesses} />
-        {won && <HallOfFame entries={FAKE_HOF} />}
       </div>
     )
   }
